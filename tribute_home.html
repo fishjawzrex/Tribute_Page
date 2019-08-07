@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    font-family: inherit;
   }
   body {
     background-color: gray;
@@ -26,25 +27,33 @@
     border: 5px solid black;
     padding: 10px;
   }
+  #image {
+    max-width:100%;
+    max-height:100%;
+  }
 </style>
 <head>
     <meta name="tribute page" content="opening preface to Musashi's book of five rings">
     <meta charset="utf-8">
-    <title>Mushashi The Legend</title>
+    <title id="title">Mushashi The Legend</title>
 </head>
 <body>
   <div>
-  <main>
+  <main id="main">
     <h1><a href="https://en.wikipedia.org/wiki/Miyamoto_Musashi" target=_blank class="center">Miyamoto Musashi</a><h>
     <h5 class="center">THE INVINCIBLE WARRIOR</h5>
     <br>
     <hr>
     <div id="img-div">
-      <a href="https://en.wikipedia.org/wiki/Miyamoto_Musashi"><img src="japan_woodcut.jpg" alt="samurai riding horse"></a>
+      <a href="https://en.wikipedia.org/wiki/Miyamoto_Musashi" id="tribute-link" target=_blank><img id="image" src="japan_woodcut.jpg" alt="samurai riding horse"></a>
+      <div class="" id="img-caption">
+        <p>Artist's depiction of Musashi</p>
+      </div>
     </div>
+
     <br>
-    <div class="red-border">
-    <p>The science of Martial Arts called the Individual School of Two Skies is
+    <div class="red-border" id="tribute-info">
+    <p>The science of Martial Arts called the Individual School of Two Swords is
       something that I have spent many years refining. Now, wishing to reveal it in a book
       for the first time, I have ascended Mount Iwato in Higo province of Kyushu. Bowing to
       Heaven, paying respect to Kannon, I face the Buddha. I am Shinmen Musashi no Kami,
@@ -59,3 +68,4 @@
   </main>
   </div>
 </body>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
